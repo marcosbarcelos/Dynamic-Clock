@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Sans-serif;
+}
+
+/* Developed in mobile first */
+
+body {
+  height: 100vh;
+  background-color: #4834d4;
+  background-image: linear-gradient(315deg, #4834d4 0%, #0c0c0c 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  display: inherit;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.clock div {
+  height: 150px;
+  width: 115px;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(5, 5, 5, 0.9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  /* letter-spacing: 2px; */
+}
+
+.clock span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.clock span.legend {
+  font-size: 10px;
+}
+/* responsive tablets and desktops */
+@media screen and (min-width: 500px) {
+  .clock {
+    width: 500px;
+  }
+
+  .clock div {
+    height: 170px;
+    width: 150px;
+    letter-spacing: 3px;
+  }
+
+  .clock span {
+    font-size: 60px;
+  }
+}
